@@ -1,0 +1,153 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/243971/pexels-photo-243971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 70%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  .left {
+    width: 102%;
+    .img1 {
+      display: flex;
+      position: relative;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .img2 {
+      width: 85px;
+      height: 52px;
+      position: absolute;
+      top: 20%;
+      left: 17%;
+    }
+    .img3 {
+      
+      width: 600px;
+      height: 450px;
+      position: absolute;
+      top: 40%;
+      left: 8%;
+      z-index: 2;
+      border-top-right-radius: 80%;
+      
+    }
+    p {
+      position: absolute;
+      top: 30%;
+      left: 18%;
+      color: white;
+      font-size: 40px;
+    }
+  }
+
+  .right {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    select {
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 0px;
+    }
+    .right1 {
+      width: 80%;
+      margin: auto;
+      h1 {
+        color: black;
+      }
+      p {
+        text-align: center;
+      }
+      .from-group {
+        position: relative;
+        margin-top: 20px;
+       
+        a {
+          text-decoration: none;
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translate(-50%, -50%);
+        }
+        input {
+          outline: none;
+          border-top: 0px;
+          border-left: 0px;
+          border-right: 0px;
+          border-bottom: 1px solid rgb(172, 170, 167);
+          width: 100%;
+          padding: 15px;
+        }
+
+        .largerCheckbox {
+          width: 20px;
+          height: 20px;
+        }
+        label {
+          color: rgb(173, 165, 165);
+        }
+        button {
+          width: 100%;
+          padding: 15px;
+          border-radius: 10px;
+          background-color: #3badcd;
+          color: white;
+        }
+      }
+      .from-group1 {
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        button[type="button1"] {
+          display: flex;
+          padding: 15px;
+          background-color: blue;
+          color: white;
+          width: auto;
+          border-radius: 10px;
+          i {
+            margin-right: 10px;
+          }
+        }
+        button[type="button2"] {
+          display: flex;
+          padding: 15px;
+          background-color: orange;
+          color: white;
+          width: auto;
+          border-radius: 10px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
